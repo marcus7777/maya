@@ -9,14 +9,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="shop-button.html">
 <link rel="import" href="shop-image.html">
 
 <dom-module id="shop-home">
 
   <template>
 
-    <style include="shop-button">
+    <style>
 
       .image-link {
         outline: none;
@@ -50,19 +49,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         opacity: 1;
       }
 
-      .item {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-
-      .item:nth-of-type(3),
-      .item:nth-of-type(4) {
-        display: inline-block;
-        width: 50%;
-      }
-
       shop-image {
         position: relative;
         height: 300px;
@@ -77,12 +63,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         };
       }
 
-      h2 {
-        font-size: 1.3em;
-        font-weight: 500;
-        margin: 32px 0;
-      }
-
       .item:nth-of-type(3) > h2,
       .item:nth-of-type(4) > h2 {
         font-size: 1.1em;
@@ -95,11 +75,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         h2 {
           margin: 24px 0;
-        }
-
-        .item:nth-of-type(3) > shop-button > a,
-        .item:nth-of-type(4) > shop-button > a {
-          padding: 8px 24px;
         }
       }
 
@@ -124,8 +99,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <p>If you'd like to keep updated with my current work, you can find me at <a href="https://facebook.com/ThePresent.Arts.Crafts">The Present on Facebook</a> ('Liking' my page would be most appreciated!), also via <a href="https://www.facebook.com/Maya-Hayward-Mixed-Media-Artist-1698961527058166">Mixed Media Art</a>, <a href="https://www.etsy.com/uk/shop/thepresents">Etsy</a>, <a href="https://twitter.com/ThePresentArts">Twitter</a> and <a
             href="https://uk.pinterest.com/mayathepresent/">Pinterest</a>.</p>
-    <shop-image src="/images/craft.jpg" alt="My Arts and Crafts" placeholder-img="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAQCwsLDAsQDAwQFw8NDxcbFBAQFBsfFxcXFxcfHhcaGhoaFx4eIyUnJSMeLy8zMy8vQEBAQEBAQEBAQEBAQEBAAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAADAA4DASIAAhEBAxEB/8QAXAABAQEAAAAAAAAAAAAAAAAAAAIEAQEAAAAAAAAAAAAAAAAAAAACEAAAAwYHAQAAAAAAAAAAAAAAERMBAhIyYhQhkaEDIwUVNREBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A3dkr5e8tfpwuneJITOzIcmQpit037Bw4mnCVNOpAAQv/2Q=="></shop-image>
     <p>As a final note, Cornwall is a beautiful place to visit, if you're ever over this way! Have a lovely week &#x263A;</p>
+    <shop-image src="/images/craft.jpg" alt="My Arts and Crafts" placeholder-img="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAQCwsLDAsQDAwQFw8NDxcbFBAQFBsfFxcXFxcfHhcaGhoaFx4eIyUnJSMeLy8zMy8vQEBAQEBAQEBAQEBAQEBAAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAADAA4DASIAAhEBAxEB/8QAXAABAQEAAAAAAAAAAAAAAAAAAAIEAQEAAAAAAAAAAAAAAAAAAAACEAAAAwYHAQAAAAAAAAAAAAAAERMBAhIyYhQhkaEDIwUVNREBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A3dkr5e8tfpwuneJITOzIcmQpit037Bw4mnCVNOpAAQv/2Q=="></shop-image>
   </template>
 
   <script>

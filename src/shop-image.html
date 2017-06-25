@@ -36,7 +36,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
     </style>
-
+    <dom-if if="[[add]]">
+      <img style="width: 25%; opacity: 1; position: static; margin-left: 70%;" src="[[add]]" > 
+    </dom-if>
     <img id="img" alt$="[[alt]]" on-load="_onImgLoad" on-error="_onImgError">
 
   </template>
@@ -50,6 +52,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get properties() { return {
 
         alt: String,
+
+        add: String,
 
         src: {
           type: String,

@@ -1,1 +1,1 @@
-polymer build && firebase deploy
+bower update && polymer build && firebase deploy
